@@ -1,0 +1,101 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0);
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1100;
+  .wrapper {
+    width: 500px;
+    height: 50vh;
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    transition: 0.3s;
+    transform: scale(0);
+    .header {
+      font-size: 36px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      .title {
+      }
+      .close {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition: 0.3s;
+        &:hover {
+          background: #ececec;
+          cursor: pointer;
+        }
+        .icon {
+          color: #0e113b;
+        }
+      }
+    }
+    .dash {
+      width: 100px;
+      height: 2px;
+      background: #0e113b;
+    }
+    .input {
+      margin: 18px 0;
+      padding-right: 10px;
+      .input-box {
+        width: 100%;
+        outline: none;
+        font-size: 20px;
+        padding: 10px 16px;
+        color: #0e113b;
+        border-radius: 6px;
+        border: 1px solid;
+        font-weight: 300;
+      }
+      .textarea-box {
+        width: 100%;
+        height: 100px;
+        resize: none;
+        border-radius: 6px;
+        outline: none;
+        border: 1px solid;
+        color: #0e113b;
+        padding: 20px;
+        font-size: 20px;
+        padding: 10px 16px;
+        font-weight: 300;
+      }
+      .button {
+        background: #0e113b;
+        outline: none;
+        border: none;
+        padding: 10px 20px;
+        height: 50px;
+        color: white;
+        width: 150px;
+        border-radius: 6px;
+        font-size: 22px;
+        font-weight: 300;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .show-modal {
+    transform: scale(1);
+  }
+}
+
+.show-background {
+  background: rgba(0, 0, 0, 0.77);
+}

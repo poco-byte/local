@@ -1,0 +1,56 @@
+{
+    "HOME": {
+        "title": "George Edwards",
+        "subtitle": "Web Designer",
+        "email": "george.edwards@inxxxxx.com",
+        "contact": "978-xxx-xx23"
+    },
+    "ABOUT": {
+        "title": "About Me",
+        "image": "img/depositphotos_123041468-stock-illustration-avatar-man-cartoon.jpg",
+        "description": "Energetic Adobe Certified Expert (ACE) web designer with 6+ years of experience. \nSeeking to enhance design excellence at Dujo International. \nDesigned 5 responsive websites per month for Amphimia Global with 99% client satisfaction. \nRaised UX scores by 35% and customer retention by 18%. Received AWWWARDS prize 2015."
+    },
+    "EXPERIENCE": [
+        {
+            "title": "Broadbeth",
+            "name": "Broadbeth Global, Inc.",
+            "desg": "Web Designer",
+            "date": "2016 - present",
+            "description": "<li>Lead UI/UX website designer for a fast-paced design firm. Created an average of four minor websites or one major website per month. </li><li>Created custom graphics sets for clients, with 99% client satisfaction scores.</li><li>Handled all composition, color, illustration, typography, and branding for client projects. Turned in projects an average of 5% faster than targets.</li><li>Converted 100+ legacy sites to responsive design. Raised UX scores by 35%.</li>"
+        },
+        {
+            "title": "Bottle Tech",
+            "name": "Bottle Tech, Inc",
+            "desg": "Freelance Web Designer",
+            "date": "2014 - 2016",
+            "description": "<li>Designed an ecommerce webapp to sell baseball hats.</li><li>Created a mobile website for a free online video game.</li><li>Designed custom graphics for a local print shop.</li><li>Improved UX for website for a local church.</li>"
+        },
+        {
+            "title": "University",
+            "name": "Williamson University",
+            "desg": "BS in Website Design",
+            "date": "2010 - 2014",
+            "description": "<li>Pursued a passion for web design with core coursework in UI/UX</li><li>Completed an Honors Capstone Project in custom graphics creation.</li><li>Wrote a popular weekly column on bad web design for the student paper.</li>"
+        }
+    ],
+    "FEEDBACK": [
+        {
+            "name": "Michael Lawson",
+            "desg": "Manager",
+            "image": "https://reqres.in/img/faces/8-image.jpg",
+            "feedback": "I think you did a great job when you ran the all hands meeting. It showed that you are capable of getting people to work together and communicate effectively. I admire your communication skills."
+        },
+        {
+            "name": "Lindsay Ferguson",
+            "desg": "Senior Web Designer",
+            "image": "https://reqres.in/img/faces/7-image.jpg",
+            "feedback": "One of the things I admire about you is your ability to manage a team remotely."
+        },
+        {
+            "name": "Tobias Funke",
+            "desg": "Web Designer",
+            "image": "https://reqres.in/img/faces/9-image.jpg",
+            "feedback": "I think you did a great job when you ran the all hands meeting. It showed that you are capable of getting people to work together and communicate effectively. I admire your communication skills."
+        }
+    ]
+}

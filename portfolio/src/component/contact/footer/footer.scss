@@ -1,0 +1,58 @@
+.footer {
+  height: 100%;
+  width: 100%;
+  color: white;
+  .content {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    margin: auto;
+    .box {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .button {
+        font-size: 30px;
+        font-weight: 100;
+        border: 1px solid white;
+        padding: 14px 30px;
+        border-radius: 8px;
+        transition: 0.1s;
+        box-sizing: border-box;
+        &:hover {
+          background: #533269;
+          cursor: pointer;
+        }
+      }
+      .social-media {
+        .text {
+          font-size: 20px;
+          padding: 10px;
+          margin: 10px;
+          text-decoration: none;
+          display: block;
+          color: white;
+          .icon {
+            margin-right: 10px;
+          }
+        }
+      }
+      .details {
+        font-size: 20px;
+          padding: 10px;
+          margin: 10px;
+          text-decoration: none;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          color: white;
+          span {
+            margin-bottom: 10px;
+          }
+      }
+    }
+  }
+}

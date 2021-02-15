@@ -1,0 +1,72 @@
+@import '../../main.scss';
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  scroll-snap-align: start;
+  // background: url(/img/atanas-teodosiev-EzoGykQmUYI-unsplash.jpg);
+  background-size: cover;
+  position: relative;
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* display: none; */
+    z-index: 0;
+    .image {
+      object-fit: cover;
+    }
+  }
+  .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    .title {
+      color: #fff;
+      font-size: 88px;
+      // padding-left: 50px;
+      height: 105px;
+      // width: 500px;
+      .animate {
+        display: inline-block;
+        // color: blue;
+        min-width: 15px;
+        animation: explode 0.3s linear 1;
+      }
+    }
+    .dash {
+      width: 350px;
+      height: 10px;
+      background: $green;
+      margin: 10px 0px 22px;
+    }
+    .subtitle {
+      color: #fff;
+      font-size: 28px;
+      // padding-left: 50px;
+      transition: 0.3s;
+      opacity: 0;
+      transform: translateX(-80px);
+    }
+    .slide {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+}
+
+@keyframes explode {
+  0% {
+    transform: scale(0.3) translateY(-35px);
+  }
+  100% {
+    transform: scale(1) translateY(0px);
+    // color: #f44336;
+  }
+}

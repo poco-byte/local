@@ -1,0 +1,46 @@
+.page {
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  max-height: 100vh;
+  overflow-y: scroll;
+}
+.dots {
+  position: fixed;
+  top: 0;
+  right: 40px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  .dot {
+    width: 10px;
+    height: 10px;
+    background: #b29eff;
+    margin-bottom: 20px;
+    border-radius: 50%;
+  }
+  .active {
+    background: #9d00ff;
+  }
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 50px;
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+  color: white;
+  height: 80px;
+  font-size: 20px;
+  font-weight: 300;
+  z-index: 1000;
+  .nav {
+    margin: 0 28px;
+    cursor: pointer;
+    transition: 0.2s;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}

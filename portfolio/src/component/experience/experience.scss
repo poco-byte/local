@@ -1,0 +1,197 @@
+@import '../../main.scss';
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background: $darkblue;
+  display: flex;
+  flex-direction: column;
+  scroll-snap-align: start;
+  padding: 100px 10%;
+  box-sizing: border-box;
+  color: $white;
+  .title {
+    font-size: 48px;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  .dash {
+    background: $darkpurple;
+    width: 100px;
+    height: 2px;
+    // margin: 0 10%;
+  }
+
+  .wrapper {
+    display: flex;
+    // margin: 20px 0;
+    .box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .lists {
+        margin-left: 14px;
+        width: 300px;
+        // margin-top: 50px;
+        .list {
+          position: relative;
+          display: flex;
+          height: 80px;
+          align-items: center;
+          .border-vertical {
+            // width: 100px;
+            height: inherit;
+            border: 0;
+            border-left: 2px solid $darkpurple;
+            /* border-bottom: 2px solid blue; */
+            /* border-radius: 10px; */
+            position: absolute;
+            background: none;
+            top: 0;
+            left: 0;
+          }
+          .border-horizontal {
+            width: 38px;
+            height: 0px;
+            border: 0;
+            // margin-right: 15px;
+            border-bottom: 2px solid $darkpurple;
+          }
+          .circle {
+            width: 10px;
+            height: 10px;
+            border: 2px solid $darkpurple;
+            border-radius: 50%;
+            position: absolute;
+            top: calc(50% - 7px);
+            left: -6px;
+            background: $darkpurple;
+          }
+          .list-value {
+            cursor: pointer;
+            font-size: 28px;
+            font-weight: 300;
+            line-height: 56px;
+            padding: 0 20px;
+            height: 56px;
+            box-sizing: border-box;
+            position: relative;
+            // width: 150px;
+            text-align: center;
+            &:hover {
+              animation: animate-hover 0.1s ease-in 1 forwards;
+            }
+          }
+          .active {
+            font-weight: bold;
+          }
+        }
+      }
+
+      .content {
+        transform: translateY(-20px);
+        font-size: 20px;
+        overflow: hidden;
+        height: 0px;
+        // animation: show-content 0.4s linear 1 forwards reverse;
+        .company-title {
+          font-size: 30px;
+          font-weight: bold;
+          margin-bottom: 10px;
+          line-height: 40px;
+
+          .link {
+            color: #9d00ff;
+            text-decoration: none;
+          }
+        }
+        .date {
+          font-size: 18px;
+          color: #b29eff;
+          margin-bottom: 10px;
+        }
+        .description {
+          font-size: 20px;
+          line-height: 30px;
+          font-weight: 300;
+          ul {
+            list-style: none;
+            margin: 0;
+            li {
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+
+      .animate-content-show {
+        animation: show-content 0.3s ease-in-out 1 forwards;
+      }
+      .animate-content-hide {
+        animation: hide-content 0.3s ease-in 1 forwards;
+      }
+
+      .subtitle {
+        color: #000000;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 30px;
+        margin-top: 16px;
+        // padding-left: 50px;
+      }
+    }
+  }
+}
+
+@function blinds($t) {
+  $open: $t + 1;
+  @return linear-gradient(
+    0deg,
+    #00000000 0%,
+    #00000000 (2 - $open) * 50%,
+    $darkpurple (2 - $open) * 50%,
+    $darkpurple $open * 50%,
+    #00000000 $open * 50%,
+    #00000000 100%
+  );
+}
+
+@keyframes animate-hover {
+  0% {
+    background-image: blinds(0);
+  }
+  20% {
+    background-image: blinds(0.2);
+  }
+  40% {
+    background-image: blinds(0.4);
+  }
+  60% {
+    background-image: blinds(0.6);
+  }
+  80% {
+    background-image: blinds(0.8);
+  }
+  100% {
+    background-image: blinds(1);
+  }
+}
+
+@keyframes show-content {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+@keyframes hide-content {
+  100% {
+    height: 0%;
+  }
+  0% {
+    height: 100%;
+  }
+}
